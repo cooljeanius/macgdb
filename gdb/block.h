@@ -20,6 +20,8 @@
 #ifndef BLOCK_H
 #define BLOCK_H
 
+#include "defs.h"
+
 /* Opaque declarations.  */
 
 struct symbol;
