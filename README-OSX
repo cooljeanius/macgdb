@@ -14,10 +14,10 @@ Feel free to fork and submit pull requests.
 Building
 --------
 
-export CFLAGS="-Wno-format"
-./configure --enable-64-bit-bfd --disable-werror --prefix=$(pwd)/dist
-make
-make install
+    export CFLAGS="-Wno-format"
+    ./configure --enable-64-bit-bfd --disable-werror --prefix=$(pwd)/dist
+    make
+    make install
 
 Code signing
 ------------
@@ -28,15 +28,17 @@ See Chapter 2, "Obtaining a Signing Identity" of the Code Signing Guide:
 
 http://developer.apple.com/mac/library/documentation/Security/Conceptual/CodeSigningGuide/index.html
 
-Add your certificate to the System keychain. Modify the trust settings as follows to "Never Trust" for all uses except for code signing, which should be "Always Trust."
+Add your certificate to the System keychain. Modify the trust settings
+as follows to "Never Trust" for all uses except for code signing, which
+should be "Always Trust."
 
 ### Signing gdb after building
 
-codesign -s "Certificate Common Name" dist/bin/*
+    codesign -s "Certificate Common Name" dist/bin/*
 
 Cleaning
 --------
 
-make distclean
-find . -iname config.cache -print -delete
+    make distclean
+    find . -iname config.cache -print -delete
 
