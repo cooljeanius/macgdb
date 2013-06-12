@@ -12,10 +12,9 @@ https://github.com/argp/macgdb
 Feel free to fork and submit pull requests.
 
 Tested on:
-
-    * 10.8.4
-    * 10.8.3
-    * 10.7.5
+* 10.8.4
+* 10.8.3
+* 10.7.5
 
 Building
 --------
